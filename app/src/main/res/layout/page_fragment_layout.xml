@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/colorPrimaryDark"
+    tools:context="com.example.andre.app_swipepage.PageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textViewBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Tracking My Money"
+        android:textColor="@android:color/background_light"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewBold"
+        android:layout_alignStart="@+id/textViewBold"
+        android:layout_below="@+id/textViewBold"
+        android:layout_marginTop="40dp"
+        android:text="Desde:"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textViewDataInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="11dp"
+        android:text="10 de setembro de 2017"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewDataInicio"
+        android:layout_alignStart="@+id/textViewDataInicio"
+        android:layout_below="@+id/textViewDataInicio"
+        android:layout_marginTop="49dp"
+        android:text="Duração:"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textViewContagemDias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="14dp"
+        android:text="0 dias"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textViewContagemDias"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/flyingmoney" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Despin"
+        android:textColor="@android:color/background_light"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/textViewBold"
+        android:layout_alignStart="@+id/textViewBold"
+        android:layout_alignTop="@+id/textView"
+        android:adjustViewBounds="false"
+        android:background="@drawable/moneyicon"
+        android:cropToPadding="false"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/imageViewChangeData"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/textViewDataInicio"
+        android:background="@drawable/settingsicon" />
+</RelativeLayout>

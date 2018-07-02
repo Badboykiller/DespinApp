@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:id="@+id/textViewDesignacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compras Lild"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPreco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="15,85 €"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="15 de setembro de 2017"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewApagar"
+            android:layout_width="73dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.06"
+            android:background="@drawable/deleteicon"
+            android:clickable="true" />
+    </LinearLayout>
+</LinearLayout>
